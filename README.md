@@ -20,7 +20,7 @@ Once you download the project, `cd` into the project folder and run:
 npm i --legacy-peer-deps
 ```
 
-## Build webpack bundle for both development and production mode
+## Building webpack bundles for both development and production mode
 
 Once the dependencies are installed, run the following command to build the webpack bundles:
 ```
@@ -31,14 +31,14 @@ npm run build-prod
 npm run build-dev
 ```
 
-## Start the server
+## Starting the server
 
 Once the bundles are built, run the following command to start the server:
 ```
 npm start
 ```
 
-## Use the NLP API
+## Using the NLP API
 
 One the server starts and the home page loads, the site is ready to be used!
 
@@ -55,7 +55,7 @@ polarity of all the text combned on the page. Possible values are:
 | N | positive |
 | N+ | trong negative |
 | NONE | without polarity |
-
+| :---- | :--- |
 
 
 
