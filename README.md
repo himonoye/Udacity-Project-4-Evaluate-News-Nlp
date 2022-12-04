@@ -57,6 +57,8 @@ polarity of all the text combned on the page. Possible values are:
 | NONE | without polarity |
 
 
+
+
 **Subjectivity:**
 marks the subjectivity of the text. It has two possible values:
 
@@ -66,8 +68,12 @@ marks the subjectivity of the text. It has two possible values:
 | SUBJECTIVE | the text has subjective marks. |
 
 
+
+
 **Sample text:**
   a text snippet from the article.
+
+
 
 
 ## Run Jest Test
