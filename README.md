@@ -43,7 +43,8 @@ One the server starts and the home page loads, the site is ready to be used!
 
 To start, paste the url of your favourite news article in the input field and the website will work the magic for you. MeaningCloud's sentimental analysis will produce values for many parameters. Here we are only showcasing 3 ofthem:
 
-- **Overall polarity: polarity of all the text combned on the page. Possible values are:**
+- **Overall polarity:**
+  polarity of all the text combned on the page. Possible values are:
 
   | Returned Value | Translation |
   | ---- | --- |
@@ -54,14 +55,16 @@ To start, paste the url of your favourite news article in the input field and th
   | N+ | trong negative |
   | NONE | without polarity |
 
-- **Subjectivity: marks the subjectivity of the text. It has two possible values:**
+- **Subjectivity:**
+  marks the subjectivity of the text. It has two possible values:
 
   | Returned Value | Translation |
   | ---- | --- |
   | OBJECTIVE | the text does not have any subjectivity marks. |
   | SUBJECTIVE | the text has subjective marks. |
 
-- **Sample text: a text snippet from the article.**
+- **Sample text:**
+  a text snippet from the article.
 
 ## Run Jest Test
 
