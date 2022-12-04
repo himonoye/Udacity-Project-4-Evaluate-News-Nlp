@@ -12,6 +12,7 @@ In addition to the listed goals above, this project also utilizes a [Natural Lan
 
 ![Screenshot of the app](./assets/images/app-screenshot.png)
 
+
 ## Getting started
 
 Once you download the project, `cd` into the project folder and run:
@@ -55,6 +56,7 @@ polarity of all the text combned on the page. Possible values are:
 | N+ | trong negative |
 | NONE | without polarity |
 
+
 **Subjectivity:**
 marks the subjectivity of the text. It has two possible values:
 
@@ -63,8 +65,10 @@ marks the subjectivity of the text. It has two possible values:
 | OBJECTIVE | the text does not have any subjectivity marks. |
 | SUBJECTIVE | the text has subjective marks. |
 
+
 **Sample text:**
   a text snippet from the article.
+
 
 ## Run Jest Test
 
@@ -81,6 +85,7 @@ npm run test
 - "jest-fetch-mock": "^3.0.3",
 - "webpack": "^4.46.0",
 - "webpack-cli": "^3.3.12"
+
 
 ## Dev Dependencies
 - "@babel/core": "^7.13.15",
