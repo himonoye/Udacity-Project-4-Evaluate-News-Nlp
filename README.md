@@ -48,7 +48,7 @@ To start, paste the url of your favourite news article in the input field and th
 polarity of all the text combned on the page. Possible values are:
 
 | Returned Value | Translation |
-| ---- | --- |
+| :----: | :---: |
 | P+ | trong positive |
 | P | positive |
 | NEU | neutral |
@@ -61,7 +61,7 @@ polarity of all the text combned on the page. Possible values are:
 marks the subjectivity of the text. It has two possible values:
 
 | Returned Value | Translation |
-| ---- | --- |
+| :----: | :---: |
 | OBJECTIVE | the text does not have any subjectivity marks. |
 | SUBJECTIVE | the text has subjective marks. |
 
