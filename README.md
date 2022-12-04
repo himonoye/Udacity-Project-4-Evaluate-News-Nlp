@@ -1,4 +1,5 @@
 # Project Instructions
+
 The goal of this project is to give you practice with:
 - Setting up Webpack
 - Sass styles
@@ -7,18 +8,20 @@ The goal of this project is to give you practice with:
 - Service workers
 - Using APIs and creating requests to external urls
 
-In addition to the listed goals above, this project also utilizes a Natural Language Processing API by MeaningCloud. We will use this API to determine various attributes of an article or blog post.
+In addition to the listed goals above, this project also utilizes a [Natural Language Processing API by MeaningCloud](https://learn.meaningcloud.com/developer/sentiment-analysis/2.1/doc). Learn more with the link below. We will use this API to determine various attributes of an article or blog post.
+
+![Screenshot of the app](./assets/images/app-screenshot.png)
 
 ## Getting started
 
-Once you have downloaded the project, `cd` into the project folder and run:
+Once you download the project, `cd` into the project folder and run:
 ```
 npm i --legacy-peer-deps
 ```
 
 ## Build webpack bundle for both development and production mode
 
-Once the dependencies are installed, run the following command to build the webpack bundle
+Once the dependencies are installed, run the following command to build the webpack bundles:
 ```
 npm run build-prod
 ```
@@ -29,28 +32,30 @@ npm run build-dev
 
 ## Start the server
 
-Once the bundles are built, run the following command to start the server
+Once the bundles are built, run the following command to start the server:
 ```
 npm start
 ```
 
 ## Use the NLP API
 
-One the server starts running and the home page loads, the API is ready to be used!
+One the server starts and the home page loads, the site is ready to be used!
 
-To start, paste the url of your favourite news article in input field and the API will work the magic for you. The sentimental analysis will produce values for many parameters. Here we are only showcasing 3 of them:
+To start, paste the url of your favourite news article in the input field and the website will work the magic for you. MeaningCloud's sentimental analysis will produce values for many parameters. Here we are only showcasing 3 ofthem:
 
-- Overall polarity: polarity of all the text combned on the page. Possible values are:
-- - P+: strong positive
-- - P: positive
-- - NEU: neutral
-- - N: negative
-- - N+: strong negative
-- - NONE: without polarity
-- Subjectivity: marks the subjectivity of the text. It has two possible values:
-- - OBJECTIVE: the text does not have any subjectivity marks.
-- - SUBJECTIVE: the text has subjective marks.
-- Sample text: a text snippet from the article.
+- **Overall polarity: polarity of all the text combned on the page. Possible values are:**
+- P+: strong positive
+- P: positive
+- NEU: neutral
+- N: negative
+- N+: strong negative
+- NONE: without polarity
+
+- **Subjectivity: marks the subjectivity of the text. It has two possible values:**
+- OBJECTIVE: the text does not have any subjectivity marks.
+- SUBJECTIVE: the text has subjective marks.
+
+- **Sample text: a text snippet from the article.**
 
 ## Run Jest Test
 
