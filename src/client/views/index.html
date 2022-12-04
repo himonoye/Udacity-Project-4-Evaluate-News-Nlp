@@ -2,42 +2,67 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
+        <title>Evaluate a news article with Natural Language Processing</title>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     </head>
 
     <body>
 
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
+    
         </header>
 
-        <main>
+        <main id = "app">
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form class="form">
+                    <h1 class="headline">Evaluate a news article with MeaningCloud Sentiment Analysis API</h1>
+                    <div id = "inputGroup">
+                        <input id="input" type="url" name="urlInput" value="" placeholder="Paste the article url here">
+                        <select id="language" name="language">
+                            <option value="auto" selected>Auto Detect</option>
+                        </select>
+                    </div>
+                    <div id="error"></div>
+                    <button id="analyze" type="submit" value="submit">Analyze</button>
                 </form>
             </section>
 
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
+            <section class="entryHolder">
+                <h2 class="title">Sentiment Analysis:</h2>
+                <div id="results">
+                    <div class="entry">
+                        <h3>Polarity:</h2>
+                        <div id = "polarity">Insert an url above to see result</div>
+                    </div>
+                    <div class="entry">
+                        <h3>subjectivity:</h2>
+                        <div id = "subjectivity">Insert an url above to see result</div>
+                    </div>
+                    <div class="entry">
+                        <h3>Sample text:</h2>
+                        <div id = "sampleText">Insert an url above to see result</div>
+                    </div>
+                </div>
             </section>
         </main>
 
         <footer>
-            <p>This is a footer</p>
         </footer>
 
     </body>
+    <script>
+        //Set up service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(() => {
+                console.log('Service worker registered!');
+                 }).catch((error) => {
+                    console.warn('Error registering service worker:');
+                    console.warn(error);
+                });
+            });
+        }
+    </script>
 </html>

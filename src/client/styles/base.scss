@@ -1,0 +1,105 @@
+:root {
+    --primary: #946251;
+    --secondary: #2a5366;
+    --secondary-dark: #1f3d4d;
+    --secondary-light: #4c7487;
+    --accent: #f2f6f7;
+    --gray-dark: #444;
+    --gray: #666;
+    --gray-light: #ddd;
+    --gray-lighter: #ededed;
+    --gray-lightest: #f7f4ed;
+
+}
+
+
+body{
+    background: var(--secondary-light);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+main {
+    flex: 2; 
+}
+
+section {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+#app{
+    display: grid;
+    padding:50px 0 0 0;
+    color: var(--gray-dark);
+    justify-content: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.headline {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    color: var(--gray-dark);
+    margin: 0 0 16px 0;
+}
+.title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+button{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: var(--secondary);
+    line-height: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border: var(--secondary) solid 1px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+button:hover {
+    border: var(--secondary-dark) solid 1px;
+    background-color: var(--secondary-dark);
+    cursor: pointer;
+}
+
+textarea{
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    border: white;
+    color: var(--gray-dark);
+    border-radius: 10px;
+    padding: 20px 20px;
+    min-height: 400px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
