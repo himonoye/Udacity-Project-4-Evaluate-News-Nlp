@@ -55,9 +55,7 @@ polarity of all the text combned on the page. Possible values are:
 | N | positive |
 | N+ | trong negative |
 | NONE | without polarity |
-| :---- | :--- |
-
-
+<br/>
 
 **Subjectivity:**
 marks the subjectivity of the text. It has two possible values:
@@ -66,13 +64,11 @@ marks the subjectivity of the text. It has two possible values:
 | :---- | :--- |
 | OBJECTIVE | the text does not have any subjectivity marks. |
 | SUBJECTIVE | the text has subjective marks. |
-
-
-
+<br/>
 
 **Sample text:**
   a text snippet from the article.
-
+<br/>
 
 
 
