@@ -1,4 +1,4 @@
-# Project Instructions
+# Evaluate a news article with MeaningCloud Sentiment Analysis API
 
 The goal of this project is to give you practice with:
 - Setting up Webpack
@@ -45,26 +45,21 @@ To start, paste the url of your favourite news article in the input field and th
 
 - **Overall polarity: polarity of all the text combned on the page. Possible values are:**
 
-| Returned Value | Translation |
-| ---- | --- |
-| P+ | trong positive |
-| P | positive |
-| NEU | neutral |
-| N | positive |
-| N+ | trong negative |
-| NONE | without polarity |
+  | Returned Value | Translation |
+  | ---- | --- |
+  | P+ | trong positive |
+  | P | positive |
+  | NEU | neutral |
+  | N | positive |
+  | N+ | trong negative |
+  | NONE | without polarity |
 
 - **Subjectivity: marks the subjectivity of the text. It has two possible values:**
 
-| Returned Value | Translation |
-| ---- | --- |
-| OBJECTIVE | the text does not have any subjectivity marks. |
-| SUBJECTIVE | the text has subjective marks. |
-| P | positive |
-| NEU | neutral |
-| N | positive |
-| N+ | trong negative |
-| NONE | without polarity |
+  | Returned Value | Translation |
+  | ---- | --- |
+  | OBJECTIVE | the text does not have any subjectivity marks. |
+  | SUBJECTIVE | the text has subjective marks. |
 
 - **Sample text: a text snippet from the article.**
 
